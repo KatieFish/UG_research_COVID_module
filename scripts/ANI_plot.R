@@ -1,10 +1,13 @@
 
+
+#for recreation of Zhou et al. fig 1c 
+#KJF least modified 03-24-20
 #window size must be divisible by 2!!!
 ANI_plot<-function(window_size){
 
 z<-window_size/2
 require("seqinr")
-alnmnt<-read.alignment("~/Desktop/SARS-CoV2_seq_comparisons/nt_identity_seq.aln", format="clustal")
+alnmnt<-read.alignment("~/Desktop/UG_research_COVID_module/alnmnts/nt_identity_seq.aln", format="clustal")
 
 ##conversion of alnmnt into matrix
 alnmnt_matrix<-matrix(nrow=length(alnmnt[[2]]), ncol=30489)
@@ -46,7 +49,5 @@ par(new=T)
 plot(x, ANI_matrix[5, ], ylab=NA, xlab=NA, type="l", col="orange", xaxt='n', yaxt='n', ylim=c(.3, 1))
 legend("bottomleft", legend=row.names(ANI_matrix), col=c("black", "red", "blue", "green", "orange"),lty=1)
 dev.off()
-
-
 
 }
