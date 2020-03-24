@@ -11,7 +11,7 @@ You should now see a folder called UG_research_COVID_module on your desktop
 ## Update the repo before activities 2 and 3. 
 I'm going to keep adding to the repo here, so you'll need to update your folder with my changes.  
 `cd` *no matter where you were, this will take you back to your home directory*  
-`cd Desktop` *we're moving to our desktop, which is where we're going to store all of the data*  
+`cd Desktop/UG_research_COVID_module` *we're moving to our desktop, which is where we're going to store all of the data*  
 `git pull` *this command pulls all of the changes I made and updates your version* 
 
 ## Download and install software. 
