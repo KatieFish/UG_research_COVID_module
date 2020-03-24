@@ -17,10 +17,10 @@ I'm going to keep adding to the repo here, so you'll need to update your folder 
 ## Download and install software. 
 - Download and install RAxML.  
   Go to your terminal and type these commands.  
-  `cd` *takes you to your home directory*
-  `git clone https://github.com/stamatak/standard-RAxML.git` *clones the RAxML software from it's developers github*
-  `cd standared-RAxML` *Navigate into the RAxML directory*
-  `make -f Makefile.SSE3.mac` *Compile the RAxML code so that it is executable*
+  `cd` *takes you to your home directory*  
+  `git clone https://github.com/stamatak/standard-RAxML.git` *clones the RAxML software from it's developers github*  
+  `cd standared-RAxML` *Navigate into the RAxML directory*  
+  `make -f Makefile.SSE3.mac` *Compile the RAxML code so that it is executable*  
 
 
 ## Instructions for Part 1 - Zhou et al.
