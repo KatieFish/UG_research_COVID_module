@@ -1,7 +1,9 @@
-##Independent Undergrad Research COVID Module
+## Independent Undergrad Research COVID Module
 
-#Clone this repository before activity 1
+# Clone this repository before activity 1
+
 Go to your terminal application. Type the following commands. 
+
 `cd` *no matter where you were, this will take you back to your home directory*
 `cd desktop` *we're moving to our desktop, which is where we're going to store all of the data*
 `git clone https://github.com/KatieFish/UG_research_COVID_module` *this is going to clone this repository onto your desktop*
