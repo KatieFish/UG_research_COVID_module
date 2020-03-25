@@ -39,7 +39,7 @@ As we're doing that, think about what exactly we learn from each of these and wh
 us exactly how this is done or what program to use. I custom wrote a function for this specific analysis that uses a "sliding window"
 to look across the alignment and find the average nucleotide identity (ANI) within each "window". In this function you decide the size 
 of the window.*  
-3. We'll set our working directory, which means the place where we'll pull files from and put them when we create them, to this repo:  
+3. Again at the console with the blue carrot, we'll set our working directory, which means the place where we'll pull files from and put them when we create them, to this repo:  
 `setwd("~/Desktop/UG_research_COVID_module/")`  
 4. Open the function we'll use. Go to the top left of Rstudio and click on the icon that looks like a folder with a green arrow coming out of it. In the UG_research_COVID_module folder there is a folder called scripts and inside that folder is a file called ANI_plot.R. Open that file. 
 5. Source the script by clicking on the icon with a blue arrow that says Source. 
