@@ -52,8 +52,8 @@ of the window.*
 `source("~/Desktop/UG_research_COVID_module/scripts/write_Zhouetal_tree.R")` *Notice how this did the same thing as when we opened and sourced the ANI_plot script we used earlier. Everything you can do by clicking you can do by commands. The GUI is sort of training wheels*  
 Go ahead and open the script as well by using the Green arrow icon again so that you can see the commands you're running.  
 11. Exectute the function:  
-`write_Zhouetal_tree(100)`  
-*Note that the bootstraps (the amount of times the data is subsampled to see how well the final tree is supported) are set by you. This is something you can play with to see how it changes how well the ML tree is supported. Start with 100 and finish through step 16 before you begin playing with bootstraps*
+`write_Zhouetal_tree(10)`  
+*Note that the bootstraps (the amount of times the data is subsampled to see how well the final tree is supported) are set by you. This is something you can play with to see how it changes how well the ML tree is supported. Start with 10 and finish through step 16 before you begin playing with bootstraps*
 There should now be a bunch of files that start with RAxML in your UG_research_COVID_module folder. The maximum liklihood tree is the one we want, and that is in the file `RAxML_bestTree.fromR-date`.  
 12. View this file from the command line on Terminal:  
 `cd ~/Desktop/UG_research_COVID_module`  
