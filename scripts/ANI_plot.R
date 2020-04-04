@@ -13,7 +13,7 @@ alnmnt<-read.alignment("~/Desktop/UG_research_COVID_module/alnmnts/nt_identity_s
 alnmnt_matrix<-matrix(nrow=length(alnmnt[[2]]), ncol=30489)
 row.names(alnmnt_matrix)<-unlist(alnmnt[[2]])
 for (i in 1:length(alnmnt[[2]])){
-alnmnt_matrix[i,]<-unlist(strsplit(nt_identity_alnmnt$seq[[i]], split=""))
+alnmnt_matrix[i,]<-unlist(strsplit(alnmnt$seq[[i]], split=""))
 }
 row.names(alnmnt_matrix)[which(row.names(alnmnt_matrix)=="MN996528.1")]<-"WIV04"
 row.names(alnmnt_matrix)[which(row.names(alnmnt_matrix)=="MN996532.1")]<-"Bat_CoV_RaTG13"
@@ -37,7 +37,7 @@ ANI_matrix[,1:z]<-ANI_matrix[,z]
 ANI_matrix[, (ncol(ANI_matrix)-z):ncol(ANI_matrix)]<-ANI_matrix[, (ncol(ANI_matrix)-z)]
 x<-c(1:ncol(ANI_matrix))
 
-pdf(file=sprintf("~/Desktop/SARS-CoV2_seq_comparisons/nt_identity_plot_%d.pdf", window_size), height=6, width = 6)
+pdf(file=sprintf("~/Desktop/UG_research_COVID_module/nt_identity_plot_%d.pdf", window_size), height=6, width = 6)
 plot(x, ANI_matrix[2, ], main=sprintf("recreation of Zhou et al. 2020 fig. 1c\n %d kb sliding window", window_size), ylab="% nucleotide identity", xlab="position", type="l", ylim=c(.3, 1), lty=3)
 par(new=T)
 plot(x, ANI_matrix[1, ], ylab=NA, xlab=NA, type="l", col="red", xaxt='n', yaxt='n', ylim=c(.3, 1))
