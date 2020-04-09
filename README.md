@@ -61,22 +61,23 @@ Subtract the line that the Pangolin sequence begins at from the total lines. Use
 	- A new page will open with the FASTA sequence for just the S protein. Click on Send to: Complete Record, File, click Create File.  
 	- Find the .fasta file from where it downloaded, rename it as SARS_CoV2_S.fasta and move it to Desktop/UG_research_Covid_module/Activity_2/fasta_files. 
 7. Use BLAST command line tools to build a blast database from our model_Beta_coronavirus.fasta file  
-`cd ~/Desktop/UG_research_COVID_module/Activity_2/fasta_files/`  
+	`cd ~/Desktop/UG_research_COVID_module/Activity_2/fasta_files/`  
 
-`/usr/local/ncbi/blast/bin/makeblastdb -in model_Beta_coronavirus.fasta -dbtype nucl -parse_seqids -out modelBetaCovdb.fn ` *We just made our sequences into a database that we'll BLAST against - it's just like running BLAST on the web-version, but we're customizing the sequences we're searching here*  
+	`/usr/local/ncbi/blast/bin/makeblastdb -in model_Beta_coronavirus.fasta -dbtype nucl -parse_seqids -out modelBetaCovdb.fn ` *We 	just made our sequences into a database that we'll BLAST against - it's just like running BLAST on the web-version, but we're 		customizing the sequences we're searching here*  
 
-`/usr/local/ncbi/blast/bin/blastn -query SARS_CoV2.fasta -db ./modelBetaCovdb.fn -out CoV_S_protein_blast_results.txt -max_hsps 1` *We blasted the S gene sequence we downloaded against the database we created*  
+	`/usr/local/ncbi/blast/bin/blastn -query SARS_CoV2.fasta -db ./modelBetaCovdb.fn -out CoV_S_protein_blast_results.txt -max_hsps 1` 		*We blasted the S gene sequence we downloaded against the database we created*  
 
-`open CoV_S_protein_blast_results.txt` *look at the results. Did we pull out sequence for each virus? Now we'll run it again to clean it up so we can align the sequences*  
+	`open CoV_S_protein_blast_results.txt` *look at the results. Did we pull out sequence for each virus? Now we'll run it 			again to clean it up so we can align the sequences*  
 
-`/usr/local/ncbi/blast/bin/blastn -query SARS_CoV2.fasta -db ./modelBetaCovdb.fn -outfmt '6 sseqid sseq' -out CoV_S_genes.txt -max_hsps 1 `  
-Run these few lines of code to clean our result up.  
-`tr "\t" "\n" < CoV_S_genes.txt > COV_S.fsa`  
+	`/usr/local/ncbi/blast/bin/blastn -query SARS_CoV2.fasta -db ./modelBetaCovdb.fn -outfmt '6 sseqid sseq' -out CoV_S_genes.txt -max_hsps 1 `  
+	Run these few lines of code to clean our result up.  
+	`tr "\t" "\n" < CoV_S_genes.txt > COV_S.fsa`  
 
-`sed -i '' 's/-//g' COV_S.fasta`  
+	`sed -i '' 's/-//g' COV_S.fasta`  
 
-One quick manual pain in the butt - open the file and put a ">" carrot in front of each sequence name to make it fasta format.
-`open COV_S.fasta`  
+	One quick manual pain in the butt - open the file and put a ">" carrot in front of each sequence name to make it fasta format.
+	`open COV_S.fasta`  
+	
 8. Open MEGA. Use what we learned last semester to load the COV_S.fasta file (File -> Edit/build alignment -> Retrieve sequences from file)  
 9. In MEGA, align the sequences with MUSCLE - align DNA, not codons.  
 10. Trim the alignment by selecting and deleting the beginning and end sequence that does not contain a base for all sequences.  
