@@ -1,0 +1,123 @@
+
+
+Using BFGS method to optimize GTR rate parameters, to disable this specify "--no-bfgs" 
+
+
+
+This is RAxML version 8.2.12 released by Alexandros Stamatakis on May 2018.
+
+With greatly appreciated code contributions by:
+Andre Aberer      (HITS)
+Simon Berger      (HITS)
+Alexey Kozlov     (HITS)
+Kassian Kobert    (HITS)
+David Dao         (KIT and HITS)
+Sarah Lutteropp   (KIT and HITS)
+Nick Pattengale   (Sandia)
+Wayne Pfeiffer    (SDSC)
+Akifumi S. Tanabe (NRIFS)
+Charlie Taylor    (UF)
+
+
+Alignment has 28534 distinct alignment patterns
+
+Proportion of gaps and completely undetermined characters in this alignment: 31.40%
+
+RAxML rapid bootstrapping and subsequent ML search
+
+Using 1 distinct models/data partitions with joint branch length optimization
+
+
+
+Executing 5 rapid bootstrap inferences and thereafter a thorough ML search 
+
+All free model parameters will be estimated by RAxML
+ML estimate of 25 per site rate categories
+
+Likelihood of final tree will be evaluated and optimized under GAMMA
+
+GAMMA Model parameters will be estimated up to an accuracy of 0.1000000000 Log Likelihood units
+
+Partition: 0
+Alignment Patterns: 28534
+Name: No Name Provided
+DataType: DNA
+Substitution Matrix: GTR
+
+
+
+
+RAxML was called as follows:
+
+/Users/katiefisher/standard-RAxML/raxmlHPC-SSE3 -f a -p 5 -x 2 -m GTRCAT -N 5 -o TGEV -s alnmnts/Beta_alpha_coronavirus.aln -n Betacoronavirus_ML_tree_activity1 
+
+
+
+Time for BS model parameter optimization 27.102064
+Bootstrap[0]: Time 37.893243 seconds, bootstrap likelihood -487015.699015, best rearrangement setting 5
+Bootstrap[1]: Time 9.365367 seconds, bootstrap likelihood -486478.295846, best rearrangement setting 6
+Bootstrap[2]: Time 9.624753 seconds, bootstrap likelihood -487411.600032, best rearrangement setting 9
+Bootstrap[3]: Time 10.023716 seconds, bootstrap likelihood -487341.905808, best rearrangement setting 5
+Bootstrap[4]: Time 13.558912 seconds, bootstrap likelihood -487015.428758, best rearrangement setting 8
+
+
+Overall Time for 5 Rapid Bootstraps 81.134698 seconds
+Average Time per Rapid Bootstrap 16.226940 seconds
+
+Starting ML Search ...
+
+Fast ML optimization finished
+
+Fast ML search Time: 104.604869 seconds
+
+Slow ML Search 0 Likelihood: -515739.484688
+Slow ML optimization finished
+
+Slow ML search Time: 192.244225 seconds
+Thorough ML search Time: 403.833055 seconds
+
+Final ML Optimization Likelihood: -515738.690041
+
+Model Information:
+
+Model Parameters of Partition 0, Name: No Name Provided, Type of Data: DNA
+alpha: 0.868920
+Tree-Length: 9.751194
+rate A <-> C: 2.240599
+rate A <-> G: 4.184234
+rate A <-> T: 1.478121
+rate C <-> G: 1.581806
+rate C <-> T: 5.490862
+rate G <-> T: 1.000000
+
+freq pi(A): 0.278419
+freq pi(C): 0.183801
+freq pi(G): 0.210702
+freq pi(T): 0.327077
+
+
+ML search took 700.688949 secs or 0.194636 hours
+
+Combined Bootstrap and ML search took 781.823902 secs or 0.217173 hours
+
+Drawing Bootstrap Support Values on best-scoring ML tree ...
+
+
+
+Found 1 tree in File /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bestTree.Betacoronavirus_ML_tree_activity1
+
+
+
+Found 1 tree in File /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bestTree.Betacoronavirus_ML_tree_activity1
+
+Program execution info written to /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_info.Betacoronavirus_ML_tree_activity1
+All 5 bootstrapped trees written to: /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bootstrap.Betacoronavirus_ML_tree_activity1
+
+Best-scoring ML tree written to: /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bestTree.Betacoronavirus_ML_tree_activity1
+
+Best-scoring ML tree with support values written to: /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bipartitions.Betacoronavirus_ML_tree_activity1
+
+Best-scoring ML tree with support values as branch labels written to: /Users/katiefisher/Desktop/UG_research_COVID_module/Activity_1/RAxML_bipartitionsBranchLabels.Betacoronavirus_ML_tree_activity1
+
+Overall execution time for full ML analysis: 781.828273 secs or 0.217175 hours or 0.009049 days
+
