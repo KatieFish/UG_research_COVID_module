@@ -10,9 +10,9 @@ I'm going to keep adding to the repo here, so you'll need to update your folder 
 `git pull` *this command pulls all of the changes I made and updates your version* 
 
 
-##Installation of software for Activity 2  
+## Installation of software for Activity 2  
 
-###Blast + command line tools  
+### Blast + command line tools  
 - Go to ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/  
 - Click on the top release (2.10.0)  
 - Click on ncbi-blast-2.10.0+.dmg (2nd link from the bottom)  
