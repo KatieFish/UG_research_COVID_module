@@ -7,7 +7,7 @@ ANI_plot<-function(window_size){
 
 z<-window_size/2
 require("seqinr")
-alnmnt<-read.alignment("~/Desktop/UG_research_COVID_module/alnmnts/nt_identity_seq.aln", format="clustal")
+alnmnt<-read.alignment("~/Desktop/UG_research_COVID_module/Activity_1/alnmnts/nt_identity_seq.aln", format="clustal")
 
 ##conversion of alnmnt into matrix
 alnmnt_matrix<-matrix(nrow=length(alnmnt[[2]]), ncol=30489)
