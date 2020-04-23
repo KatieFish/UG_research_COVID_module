@@ -71,7 +71,7 @@ Subtract the line that the Pangolin sequence begins at from the total lines. Use
 
 	`/usr/local/ncbi/blast/bin/blastn -query SARS_CoV2.fasta -db ./modelBetaCovdb.fn -outfmt '6 sseqid sseq' -out CoV_S_genes.txt -max_hsps 1 `  
 	Run these few lines of code to clean our result up.  
-	`tr "\t" "\n" < CoV_S_genes.txt > COV_S.fsa`  
+	`tr "\t" "\n" < CoV_S_genes.txt > COV_S.fasta`  
 
 	`sed -i '' 's/-//g' COV_S.fasta`  
 
